@@ -15,5 +15,10 @@ class SimpleXntwistUiTestCase(unittest.TestCase):
         rv = self.app.get('/')
         self.assertIn('Simple XNTwist UI', rv.data.decode())
         self.assertIn('Simple demonstration of the XNTwist algorithm using Flask.', rv.data.decode())
-        self.assertIn('Welcome!', rv.data.decode())
-        self.assertIn('This is the start of something great.', rv.data.decode())
+
+    def test_results_page(self):
+        rv = self.app.get('/example.com')
+        assert rv.status_code == 200
+        self.assertIn('Simple XNTwist UI', rv.data.decode())
+        self.assertIn('Simple demonstration of the XNTwist algorithm using Flask.', rv.data.decode())
+        assert 'ȩxample.com (xn--xample-9oc.com)' in rv.data.decode()
