@@ -1,0 +1,1 @@
+web: gunicorn simple_xntwist_ui.simple_xntwist_ui:app --log-file=-

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Results for {{ domain }}</h1>
+
+    Found {{ count }} results with a <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="The results shown below is only a small sample of the possible output from XNTwist. See xntwist.tk for more information about the algorithm.">limited dataset</span>.
+
+    <br><br>
+
+    <ul>
+        {% for squat in possible_squats %}
+            <li>{{ squat.displayed }} ({{ squat.punycode }})</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
