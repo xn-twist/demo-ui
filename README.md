@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/xn-twist/demo-ui.svg?branch=master)](https://travis-ci.org/xn-twist/demo-ui)
 
-Simple demonstration of the XNTwist algorithm using Flask: [https://demo.xntwist.tk/](https://demo.xntwist.tk/).
+Simple demonstration of the XNTwist algorithm using Flask: [https://demo.xntwist.hightower.space/](https://demo.xntwist.hightower.space/).
 
 ## Quick Start
 
