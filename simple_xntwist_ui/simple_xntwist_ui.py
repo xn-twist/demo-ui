@@ -27,9 +27,8 @@ def twist():
 def results(domain):
     """."""
     xn = XNTwist()
-    results = xn.twist(domain, limit=1)
+    results = xn.twist(domain, simple=True)
     return render_template('results.html', domain=domain, possible_squats=results['possible_squats'], count=results['count'])
-
 
 
 if __name__ == '__main__':

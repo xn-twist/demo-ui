@@ -1,5 +1,5 @@
 Flask
 gunicorn
 pytest
-xn-twist
-xn-twist-python-sdk
+xn-twist==1.4.0
+xn-twist-python-sdk==5.0.0
